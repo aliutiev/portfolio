@@ -1,0 +1,110 @@
+{% comment %}
+
+- Move CSS to theme.scss
+- Make links open new tab when clicked on?
+- Uses flexbox
+- Images should be bigger than 300x300 or else container won't be filled
+{% endcomment %}
+
+<div class="page-width image-matrix--default">
+  
+  {% if section.settings.title != blank %}
+    <div class="section-header text-center">
+      <h2 class="h3">{{ section.settings.title | escape }}</h2>
+    </div>
+  {% endif %}
+  
+  <div class="image-matrix" 
+       style="{%- unless section.settings.background_color == blank -%}
+              	background-color: {{ section.settings.background_color }};
+              {%- endunless -%}
+              {%- unless section.settings.background_image == blank -%}
+              	background-image: url('{{ section.settings.background_image | img_url: '300x300' }}');
+              	background-position: {{ section.settings.background_pos_x }}% {{ section.settings.background_pos_y }}%;
+              {%- endunless -%}">
+    {% for block in section.blocks %}
+      <div class="image-matrix__item">
+        <a href="{{ block.settings.link }}">
+          <img class="image-matrix__item__image" 
+               src="{{ block.settings.image | img_url: '300x300' }}"
+               alt="{{ block.settings.image.alt }}">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Image Matrix",
+    "settings": [
+	  {
+		"type": "text",
+		"id": "title",
+		"label": "Heading"
+	  },
+	  {
+		"type": "image_picker",
+		"id": "background_image",
+		"label": "Background Image"
+	  },
+	  {
+		"type": "color",
+		"id": "background_color",
+		"label": "Background Color"
+	  },
+	  {
+		"type": "range",
+		"id": "background_pos_x",
+		"label": "Background Image Position X\%",
+		"min": 0,
+		"max": 100,
+		"step": 1,
+		"unit": "%",
+		"default": 0
+	  },
+	  {
+		"type": "range",
+		"id": "background_pos_y",
+		"label": "Background Image Position Y\%",
+		"min": 0,
+		"max": 100,
+		"step": 1,
+		"unit": "%",
+		"default": 0
+	  }
+	],
+    "presets": [
+      {
+        "name": {
+
+          "en": "Clubs Home Image Matrix"
+
+        },
+        "category": {
+
+          "en": "Clubs Home"
+        }
+      }
+    ],
+	"blocks": [
+	  {
+		"type": "image",
+		"name": "Image",
+		"settings": [
+			{
+			  "type": "image_picker",
+			  "id": "image",
+			  "label": "Image"
+			},
+			{
+			  "type": "url",
+			  "id": "link",
+			  "label": "Image Link",
+			  "info": "Optional"
+			}
+		]
+	  }
+	]
+  }
+{% endschema %}
