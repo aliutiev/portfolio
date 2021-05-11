@@ -1,4 +1,4 @@
-# Welcome :wave:
+# Welcome
 
 Hey I'm Andrew. If you've stumbled here it means I wanted you to see my portfolio. Included are some small projects I've worked on mostly for school but also for some for small passion projects. I'm currently working on building up my Git/Digital Portfolio as many of my works were on websites/Shopify stores while at work, so I hope you can appreciate and enjoy looking at what I could include.
 
@@ -23,7 +23,6 @@ I love learning and the more I learn the less I feel like I know anything at all
 ## Fun Facts
 
 - I'm building an e-commerce store called [The Golden Boys](https://thegoldenboys.ca/pages/about) the password is <em> lululemon </em> but check out my about page! 
-- I'm half Chinese &#127464;&#127475; and half Romanian (I'm fluent in understanding both languages but I can't speak them very well)
 - I used to play competitive eSports ([steam](https://steamcommunity.com/id/spartinii/))
 - I was in boy Scouts for over 10 years (I know it's a lot) but I love the outdoors
 
