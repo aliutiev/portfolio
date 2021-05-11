@@ -1,6 +1,6 @@
 # Welcome :wave:
 
-Hey I'm Andrew. If you've stumbled here it means I wanted you to see my portfolio. Included are some small projects I've worked in the past mostly for school but some for small passion projects. I'm currently working on building up my Git/Digital Portfolio as many of my works were on websites/Shopify stores while at work, so I hope you can appreciate and enjoy looking at what I could include.
+Hey I'm Andrew. If you've stumbled here it means I wanted you to see my portfolio. Included are some small projects I've worked on mostly for school but also for some for small passion projects. I'm currently working on building up my Git/Digital Portfolio as many of my works were on websites/Shopify stores while at work, so I hope you can appreciate and enjoy looking at what I could include.
 
 <img src="https://cdn.shopify.com/s/files/1/0469/9098/3319/files/Casual_Profile_Square.JPG?v=1615929696" width="200" height="200" border-radius="50" />
 
