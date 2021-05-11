@@ -17,11 +17,13 @@ Hey I'm Andrew. If you've stumbled here it means I wanted you to see my portfoli
 
 ## Impact
 - Marketing & Design [Heraime](https://www.heirame.com/) (2020)
+- Marketing & Design [Lobonie](loboni-store.myshopify.com) (2020)
 - UI, UX & Content from [Aaron Kates Financial](http://www.aaronkatesfinancial.com/) to [Mortage Wizard](https://mortgagewizard.ca/) (2020)
 
 ## Fun Facts
 
-- I'm half Chinese 	&#127464;&#127475; and half Romanian (I'm fluent in understanding both languages but I can't speak them very well)
+- I'm building an e-commerce store called [The Golden Boys](https://thegoldenboys.ca/pages/about) the password is lululemon but check out my about page! 
+- I'm half Chinese &#127464;&#127475; and half Romanian (I'm fluent in understanding both languages but I can't speak them very well)
 - I used to play competitive eSports ([steam](https://steamcommunity.com/id/spartinii/))
 - I was in boy Scouts for over 10 years I love the outdoors
 
