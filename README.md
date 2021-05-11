@@ -17,7 +17,7 @@ Hey I'm Andrew. If you've stumbled here it means I wanted you to see my portfoli
 
 ## Impact
 - Marketing & Design [Heraime](https://www.heirame.com/) (2020)
-- Marketing & Design [Lobonie](loboni-store.myshopify.com) (2020)
+- Marketing & Design [Lobonie](https://www.lobonie.com/) (2020)
 - UI, UX & Content from [Aaron Kates Financial](http://www.aaronkatesfinancial.com/) to [Mortage Wizard](https://mortgagewizard.ca/) (2020)
 
 ## Fun Facts
