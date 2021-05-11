@@ -16,8 +16,9 @@ I love learning and the more I learn the less I feel like I know anything at all
 
 
 ## Impact
-- Marketing & Design [Heraime](https://www.heirame.com/) (2020)
-- Marketing & Design [Lobonie](https://www.lobonie.com/) (2020)
+- Digital redesign in response to COVID-19 [Lazaridis Students' Society](https://lazsoc.ca/) (2021)
+- Marketing & Design [Heraime](https://www.heirame.com/) (Shopify 2020)
+- Marketing & Design [Lobonie](https://www.lobonie.com/) (Shopify 2020)
 - UI, UX & Content from [Aaron Kates Financial](http://www.aaronkatesfinancial.com/) to [Mortage Wizard](https://mortgagewizard.ca/) (2020)
 
 ## Fun Facts
