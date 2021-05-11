@@ -1,0 +1,81 @@
+Title: The Jungle
+Year: 2013
+Director: Alber Einstein
+Rating (0-10): 7
+
+0: science fiction 
+1: fantasy 
+2: drama 
+3: romance 
+4: comedy 
+5: zombie 
+6: action 
+7: historical 
+8: horror 
+9: war 
+
+Genre: 4
+
+Title: The Jungle
+Year: 2013 
+Director: Alber Einstein
+Rating: 7.0
+Genre: comedy
+
+Title: Dellamorte Dellamore
+Year: 1994 
+Director: Michele Soavi
+Rating: 7.2
+Genre: romance
+
+Title: Zulu
+Year: 2013 
+Director:  Jérôme Salle
+Rating: 6.7
+Genre: drama
+
+0
+1800
+19
+
+----
+
+Title: Zulu
+Year: 1964
+Director: Cy Endfield
+Rating (0-10): 7.8
+
+0: science fiction 
+1: fantasy 
+2: drama 
+3: romance 
+4: comedy 
+5: zombie 
+6: action 
+7: historical 
+8: horror 
+9: war 
+
+Genre: 9
+
+Title: Zulu
+Year: 1964 
+Director: Cy Endfield
+Rating: 7.8
+Genre: war
+
+Title: Dellamorte Dellamore
+Year: 1994 
+Director: Michele Soavi
+Rating: 7.2
+Genre: romance
+
+Title: Zulu
+Year: 2013 
+Director:  Jérôme Salle
+Rating: 6.7
+Genre: drama
+
+0
+49
+-30
