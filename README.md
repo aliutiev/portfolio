@@ -23,7 +23,7 @@ I love learning and the more I learn the less I feel like I know anything at all
 ## Fun Facts
 
 - I'm building an e-commerce store called [The Golden Boys](https://thegoldenboys.ca/pages/about) the password is <em> lululemon, </em> check out my about page! 
-- I used to play competitive eSports ([steam](https://steamcommunity.com/id/spartinii/))
+- I used to play competitive eSports ([steam](https://steamcommunity.com/id/spartinii/)) that's where I got my name Spartinii
 - I was in boy Scouts for over 10 years (I know it's a lot) but I love the outdoors
 
 ## Contact
