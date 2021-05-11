@@ -1,0 +1,115 @@
+<div class="text-collapse container page-width">
+  <div class="row">
+    
+    <div class="section-header text-center" style="width:100%">
+      <h1 style="letter-spacing: 2px;">{{ section.settings.section_heading }}</h1>
+ 	
+    </div>
+    
+    <div class="col-12">
+      <div class="panel-group" id="accordion">
+        
+        {% for block in section.blocks %}
+          {% assign block_id = block.id %}
+          
+          <div class="panel panel-default">
+            
+            {% comment %} Question {% endcomment %}
+            <div class="faq-question panel-heading rich-text__heading--large">
+              <h4 class="panel-title">
+                <a class="collapsed" data-toggle="collapse" data-target="#row-{{ block_id }}" href="#row-{{ block_id }}">
+                  {{ block.settings.row_title }}
+                </a>
+              </h4>
+            </div>
+            
+            {% comment %} Answer {% endcomment %}
+            <div id="row-{{ block_id }}" 
+                 class="faq-answer panel-collapse collapse">
+              <div class="row">
+                <div class="col-12">
+                  
+                  
+                  {{ block.settings.row_content }}
+                  
+                </div>
+
+                
+              </div>
+            </div>
+          </div>        
+          
+        {% endfor %}
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+{% schema %}
+{
+
+  "name": {
+    "en": "Resources"
+  },
+
+  "settings": [
+	{
+      "type": "text",
+      "id": "section_heading",
+      "label": {
+      	"en": "Heading"
+      },
+      "default": {
+      	"en": "RESOURCES"
+      }
+    }
+  ],
+
+  	"blocks": [{
+		"type": "Row",
+		"name": "Row",
+		"settings": [
+		{
+		  "type": "text",
+		  "id": "row_title",
+		  "label": "Row Title"
+		},
+		{
+          "type": "textarea",
+          "id": "row_content",
+          "label": {
+          	"en": "Content"
+          },
+		  "info": "HTML allowed"
+		},
+		{
+		  "type": "checkbox",
+		  "id": "is_visible",
+		  "label": "Show Answer",
+		  "default": true
+		}
+		
+	]
+  }], 
+	"presets": [
+    {
+      "name": {
+
+        "en": "cBDL hiring tc"
+
+      },
+      "category": {
+
+        "en": "cBDL"
+      }
+  }]
+}
+
+{% endschema %}
+
+{% comment %}  
+Bootstrap classes used:
+  panel, panel-default, panel-heading, panel-title, panel-collapse
+{% endcomment %}
