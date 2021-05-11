@@ -4,7 +4,7 @@ Hey I'm Andrew. Included are some small projects I've worked on mostly for schoo
 
 <img src="https://cdn.shopify.com/s/files/1/0469/9098/3319/files/Casual_Profile_Square.JPG?v=1615929696" width="200" height="200" />
 
-I love learning and the more I learn the less I feel like I know anything at all. <em> If you have a need for something to get done with a specific skill, language or program in mind that I don't know, I'll tell you and then I'll figure out a way to get it done. </em>
+I love learning and the more I learn the less I feel like I know anything at all. If you have a need for something to get done with a specific skill, language or program in mind that I don't know, <em> I'll tell you and then I'll figure out a way to get it done. </em>
 
 ## Languages, Programs, Platforms & Tools
 | Type      | Description |
