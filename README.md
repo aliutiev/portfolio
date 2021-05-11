@@ -6,7 +6,7 @@ Hey I'm Andrew. Included are some small projects I've worked on mostly for schoo
 
 I love learning and the more I learn the less I feel like I know anything at all. If you have a need for something to get done with a specific skill, language or program in mind that I don't know, <em> I'll tell you and then I'll figure out a way to get it done. </em>
 
-## Languages, Programs, Platforms & Tools
+## Technical Skill Set
 | Type      | Description |
 | ----------- | ----------- |
 | Languages | Python, C, Java, JS, SQL & VBA  |
