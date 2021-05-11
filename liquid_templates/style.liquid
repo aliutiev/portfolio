@@ -1,0 +1,36 @@
+<style id="c-BDL-style">
+
+  .feature-row__item, .rich-text__heading--medium{
+    color: {{section.settings.color_primary}};
+  }
+  .btn{
+    background-color: {{section.settings.color_secondary}};
+  }
+  
+  .rich-text__heading--large{
+    color: {{section.settings.color_primary}};
+  }
+  .panel-title{
+    color: {{section.settings.color_secondary}};
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "cBDL Style",
+    "settings": [
+	{
+         "type": "color",
+         "id": "color_primary",
+         "label": "Primary Color",
+	 "default": "#000000"
+	},
+	{
+         "type": "color",
+         "id": "color_secondary",
+         "label": "Secondary Color",
+	 "default": "#ffbf40"
+	}
+	]
+  }
+{% endschema %}
