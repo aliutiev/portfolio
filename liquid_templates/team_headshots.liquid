@@ -1,0 +1,271 @@
+{% comment %}
+Notes:
+- Only one copy of this section can be placed on a page because of ids
+{% endcomment %}
+
+{% comment %}
+Build an array to hold rows and another to hold headshots.
+{% endcomment %}
+
+{% assign rows = '' %}
+{% assign headshots = '' %}
+
+{% for block in section.blocks %}
+
+  {% if block.type == "row" %}
+	{% assign row_id = "team-" | append: block.id %}
+	{% capture row_1st_half %}
+      <div class="panel panel-default">
+
+        <!-- Row Heading -->
+        <div class="panel-heading rich-text__heading--large">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-target="#{{ row_id }}" href="#{{ row_id }}">{{ block.settings.row_title }}</a>
+          </h4>
+        </div>
+
+        <!-- Portfolio Headshots -->
+        <div id="{{ row_id }}" class="panel-collapse collapse {% unless block.settings.is_collapsed %}in show{% endunless %}">
+          <div id="headshots_{{ row_id}}" class="row">
+	{% endcapture %}
+	{% capture row_2nd_half %} 
+          </div>
+        </div>
+      </div>
+	{% endcapture %}
+	{% assign rows = rows | append: '::' %}
+	{% assign rows = rows | append: row_1st_half %}
+	{% assign rows = rows | append: '::' %}
+	{% assign rows = rows | append: row_2nd_half %}
+
+  {% elsif block.type == "headshot" %}
+    {% capture headshot %}
+      <div class="ourteam-person col-6 col-md-4 col-lg-3">
+        <a data-toggle="modal" data-target="#headshot-modal">
+          <div class="person-headshot--overlay">
+          	<img src="{{ block.settings.image_headshot | img_url: '550x550' }}" alt="{{ block.settings.image_headshot.alt | escape }}">
+          </div>
+        </a>
+        <div class="person-name rich-text__text--large"><h5>{{ block.settings.name_of_person }}</h5></div>
+        <div class="person-role rich-text__text--small">{{ block.settings.role_of_person}}</div>
+        <div class="person-description">{{ block.settings.description_of_person | newline_to_br }}</div>
+      </div>
+    {% endcapture %}
+	{% assign headshots = headshots | append: '::' %}
+	{% assign headshots = headshots | append: headshot %}
+	{% assign headshots = headshots | append: '::' %}
+	{% assign headshots = headshots | append: block.settings.row_number %}
+
+  {% endif %}
+
+{% endfor %}
+
+{% assign rows = rows | split: '::' %}
+{% assign headshots = headshots | split: '::' %}
+
+{% comment %}
+The code above should result in something like the following:
+
+	rows = ["<div>...", "</div></div></div>", "<div>...", "</div></div></div>", ...]
+	headshots = ["<div><a><img>...</div>", "1", "<div><a><img>...</div>", "2", ...]
+
+Every pair of elements in rows represents the HTML for a row. The odd element being
+ 	opening tags, and the even element being the closing tags.
+Every odd element in headshots represents the HTML for a headshot.
+Every even element in headshots represents the row number for the headshot in the index
+	below it.
+We can then stick each headshot inside its designated row, by using the even element
+	in headshots to check which row the headshot belongs to.
+{% endcomment %}
+
+<div class="ourteam container page-width">
+  <div class="row">
+    
+    <div class="col-12 rich-text__heading--large ourteam-heading">
+      <h2 class="h3">{{ section.settings.section_heading }}</h2>
+    </div>
+    
+    <div class="col-12">
+      <div class="panel-group" id="accordion">
+        
+        {% assign row_number = 1 %}
+        {% for i in (0..rows.size) limit: rows.size %}
+        
+          {{ rows[i] }}
+        
+          {% assign odd_check = i | modulo: 2 %}
+          {% if odd_check == 1 %}
+        
+        	{% for j in (0..headshots.size) limit: headshots.size %}	
+        	  {% assign get_row_number = j | plus: 1 %}
+        	  {% assign get_row_number = headshots[get_row_number] | times: 1 %}
+        	  {% if get_row_number == row_number %}
+        		{{ headshots[j] }}
+        	  {% endif %}
+        	{% endfor %}
+        
+        	{% assign row_number = row_number | plus: 1 %}
+          {% endif %}
+        
+        {% endfor %}
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div id="headshot-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl headshot-modal-size" role="dialog">
+    <div class="modal-content">
+
+      <div class="headshot-modal-body modal-body">
+
+        <div class="modal-headshot-container">
+          <img class="modal-headshot" src="">
+        </div>
+
+        <div class="modal-blurb-container">
+          <div class="modal-person-name rich-text__heading--large">
+          </div>
+          <div class="modal-person-role rich-text__heading--small">
+          </div>
+          <div class="modal-person-description-container rich-text__text--small">
+            <p id="modal-person-description"></p>
+          </div>
+        </div>
+
+      </div>
+      
+
+      <button type="button" class="modal-close-button close" data-dismiss="modal" aria-label="close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      
+      
+    </div>
+    
+  </div>
+</div>
+  
+<script>
+  $('#headshot-modal').detach().appendTo('body');
+  
+  $('#headshot-modal').on('show.bs.modal', function (event) {
+    var a = $(event.relatedTarget); // The <a> tag that triggered the modal
+    var modal = $(this);
+    modal.find
+    // Find modal image and set src to src of image from page
+    modal.find('.modal-headshot').attr("src", a.find('img').attr('src'));
+    // Find person's name and position
+    modal.find('.modal-person-name').text(a.siblings(".person-name").find("h5").text());
+    modal.find('.modal-person-role').text(a.siblings(".person-role").find("p").text());
+    console.log(a.siblings(".person-role")[0]);
+    modal.find('#modal-person-description').html(a.siblings(".person-description").html());
+  })
+</script>
+
+{% schema %}
+{
+    "name": {
+        "en": "cBDL Team"
+    },
+
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Heading",
+            "default": "default text"
+        }
+    ],
+	
+    "blocks": [
+
+        {
+            "type": "row",
+            "name": "Row",
+            "settings": [
+
+                {
+                    "type": "text",
+                    "id": "row_title",
+                    "label": "Row Title"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "is_collapsed",
+                    "label": "Collapsed?"
+                }
+            ]
+        },
+
+        {
+            "type": "headshot",
+            "name": "Headshot",
+            "settings": [
+
+                {
+                    "type": "image_picker",
+                    "id": "image_headshot",
+                    "label": {
+                        "en": "Headshot Photo"
+                    },
+					"info": "Atleast 300x300 recommended."
+                },
+
+                {
+                    "type": "text",
+                    "id": "name_of_person",
+                    "label": {
+                        "en": "Name"
+                    }
+                },
+
+                {
+                    "type": "text",
+                    "id": "role_of_person",
+                    "label": {
+                        "en": "Role"
+                    }
+                },
+
+                {
+                    "type": "richtext",
+                    "id": "description_of_person",
+                    "label": {
+                        "en": "Description"
+                    }
+                },
+
+                {
+                    "type": "text",
+                    "id": "row_number",
+                    "label": {
+                        "en": "Row Number"
+                    }
+                }
+            ]
+        }
+    ],
+
+  "presets": [
+    {
+      "name": {
+        "en": "cBDL Team Headshots"
+      },
+      "category": {
+        "en": "cBDL"
+      }
+    }
+  ]
+
+}
+
+{% endschema %}
+
+{% comment %}
+Bootstrap classes used:
+  panel, panel-default, panel-heading, panel-title, panel-collapse 
+  modal, fade, modal-dialog, modal-dialog-centered,  modal-lg, modal-content, modal-body
+{% endcomment %}
