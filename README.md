@@ -1,4 +1,4 @@
-# Welcome
+# Welcome :wave:
 
 Hey I'm Andrew. Included are some small projects I've worked on mostly for school but also for some for small passion projects. I'm currently working on building up my Git/Digital Portfolio as many of my works were on websites/Shopify stores while at work, so I hope you can appreciate and enjoy looking at what I could include.
 
