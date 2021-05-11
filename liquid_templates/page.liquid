@@ -1,0 +1,30 @@
+{% comment %}
+------------- cBDL colors and style sheet! -------------
+{% endcomment %}
+
+{% assign club_color_primary = 'rgba(16, 55, 4, 1)' %}
+{% assign club_color_secondary = 'rgba(162, 153, 99, 1)' %}
+
+
+<style>
+  .feature-row__item, .rich-text__heading--medium{
+    color: {{club_color_primary}};
+  }
+  .btn{
+    background-color: {{club_color_secondary}};
+  }
+  
+</style>
+
+{% comment %}
+------------- cBDL Main Page -------------
+
+{% section 'c-BDL-home-hero-landing' %}
+
+{% section 'c-BDL-home-rt-about' %}
+
+{% section 'c-BDL-home-fr-0' %}
+{% section 'c-BDL-home-fr-1' %}
+{% section 'c-BDL-home-fr-2' %}
+{% endcomment %}
+
