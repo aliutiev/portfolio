@@ -1,6 +1,6 @@
 # Welcome :wave:
 
-Hey I'm Andrew. Included are some small projects I've worked on mostly for school but also for some for small passion projects. I'm currently working on building up my Git/Digital Portfolio as many of my works were on websites/Shopify stores while at work, so I hope you can appreciate and enjoy looking at what I could include.
+Hey I'm Andrew. Included are some small projects I've worked on mostly for school but also for small passion projects. I'm working on building up my Git/Digital Portfolio as many of my works were on websites/Shopify stores so I couldn't include everything but I hope you can appreciate and enjoy looking at what I could. 
 
 <img src="https://cdn.shopify.com/s/files/1/0469/9098/3319/files/Casual_Profile_Square.JPG?v=1615929696" width="200" height="200" />
 
@@ -24,7 +24,7 @@ I love learning and the more I learn the less I feel like I know anything at all
 
 - I'm building an e-commerce store called [The Golden Boys](https://thegoldenboys.ca/pages/about) the password is <em> lululemon, </em> check out my about page! 
 - I used to play competitive eSports ([Steam](https://steamcommunity.com/id/spartinii/)) that's where I got my name Spartinii
-- I was in boy Scouts for over 10 years (I know it's a lot) but I love the outdoors
+- I was in boy Scouts for over 10 years <em>(I know it's a lot)</em> but I love the outdoors
 
 ## Contact
 Best way to reach me publicly would be through my [LinkedIn](https://www.linkedin.com/in/liutiev/) so if you have any questions feel free to connect & ask! 
