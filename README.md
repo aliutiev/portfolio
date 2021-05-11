@@ -27,4 +27,4 @@ I love learning and the more I learn the less I feel like I know anything at all
 - I was in boy Scouts for over 10 years (I know it's a lot) but I love the outdoors
 
 ## Contact
-Best way to reach me publicly would be through my [LinkedIn](https://www.linkedin.com/in/liutiev/) so if you have any questions feel free to ask! 
+Best way to reach me publicly would be through my [LinkedIn](https://www.linkedin.com/in/liutiev/) so if you have any questions feel free to connect & ask! 
