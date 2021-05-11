@@ -1,0 +1,5 @@
+[database]
+user = dcris
+password = dcris
+host = rsbohr.wlu.ca
+database = dcris
