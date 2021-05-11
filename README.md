@@ -1,5 +1,29 @@
-##Andrew Liutiev
+# Foobar
 
-Hi I'm Andrew. If you've stumbled here it means I wanted you to see my portfolio. Included are some small projects I've worked in the past mostly for school but some for passion projects. I'm currently working on building up my Git Portfolio so I hope you ejoy 
-#adsfda
-description test 123sdf
+Foobar is a Python library for dealing with word pluralization.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install foobar
+```
+
+## Usage
+
+```python
+import foobar
+
+foobar.pluralize('word') # returns 'words'
+foobar.pluralize('goose') # returns 'geese'
+foobar.singularize('phenomena') # returns 'phenomenon'
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
