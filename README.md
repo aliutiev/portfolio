@@ -9,7 +9,7 @@ I love learning and the more I learn the less I feel like I know anything at all
 ## Technical Skill Set
 | Type      | Description |
 | ----------- | ----------- |
-| Languages | Python, C, Java, JS, SQL & VBA  |
+| Languages | Python, C, Java, JS, Liquid/Ruby, SQL & VBA  |
 | Programs  | Confluence, JIRA, Asana, Office Suite & Adobe Creative Suite |
 | Platforms | Shopify, Wix & Wordpress | 
 | Tools     | Pandas, Selenium & Jupyter |
