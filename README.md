@@ -12,7 +12,7 @@ I love learning and the more I learn the less I feel like I know anything at all
 | Languages | Python, C, Java, JS, Liquid/Ruby, SQL & VBA  |
 | Programs  | Confluence, JIRA, Asana, Office Suite & Adobe Creative Suite |
 | Platforms | Shopify, Wix & Wordpress | 
-| Tools     | Pandas, Selenium & Jupyter |
+| Tools     | Pandas, Selenium, Jupyter, LeafletJS & ChartJS |
 
 ## Contact
 Best way to reach me publicly would be through my [LinkedIn](https://www.linkedin.com/in/liutiev/) so if you have any questions feel free to connect & ask! 
