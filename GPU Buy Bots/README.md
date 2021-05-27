@@ -1,1 +1,1 @@
-Created basic bots to purchase graphics cards from various sites including Amazon & Canada Computers using Selenium, ChromeDriver & Python.
+During the COVID-19 pandemic there was a rise in consumer demand for graphics cards and a shortage from graphics cards suppliers, specifically to mine Ethereum/Bitcoin. I created basic bots to purchase graphics cards from various sites including Amazon & Canada Computers using Selenium, ChromeDriver & Python.
