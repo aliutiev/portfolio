@@ -1,1 +1,1 @@
-Sample assignment to encipher and decipher basic text messages using basic cryptography techniques.
+Sample introductory project to encipher and decipher text messages using basic cryptography ciphering techniques.
