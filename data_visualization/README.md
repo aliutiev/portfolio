@@ -1,1 +1,1 @@
-A sample assignment and final project for a data visualization course using Pandas, Python & Jupyter.
+A final project for data visualization highlighting the correlation of COVID-19 and the unemployment rate within Canada. Using Pandas, the data was extracted to show multiple graphs of the unemployment rate and COVID-19 cases within Canada. Full details are within the ipynb file.
