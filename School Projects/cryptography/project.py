@@ -1,7 +1,7 @@
 """
 -----------------------------
 CP460 (Fall 2020)
-A1_Solution
+Introductory Project
 Name: Andrew Liutiev
 Email: liut5320@mylaurier.ca
 Student Number: 180635320
