@@ -1,6 +1,6 @@
 [ssh]
 ssh_address_or_host = 216.249.57.42
 ssh_username = liut5320@mylaurier.ca
-ssh_password = $3XYthing
+ssh_password = 
 remote_bind_address = 127.0.0.1
 remote_port = 3306
