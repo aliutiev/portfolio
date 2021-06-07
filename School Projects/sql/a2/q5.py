@@ -10,16 +10,15 @@ __updated__ = "2018-09-17"
 """
 
 from Connect import Connect
-from asgn04 import key_info
+from asgn03 import supp_key_member_count
+
 
 conn = Connect("dcris.txt")
-constraint_schema = "dcris"
-table_name = 'member_keyword'
-ref_table_name = 'keyword'
+supp_key_id = None
 
-print("When table name & ref table name = {}, {}".format(table_name, ref_table_name))
+print("When supp_key id  = {}".format(supp_key_id))
 
-rows = key_info(conn, constraint_schema, table_name, ref_table_name)
+rows = supp_key_member_count(conn, supp_key_id)
 
 for row in rows:
     print(row)
