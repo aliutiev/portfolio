@@ -1,0 +1,66 @@
+"""
+-------------------------------------------------------
+[program description]
+-------------------------------------------------------
+Author: Andrew Liutiev
+ID:    180635320
+Email:    liut5320@mylaurier.ca
+__updated__ = "2020-03-27"
+-------------------------------------------------------
+"""
+
+Q1 ------------------------------------------------------------------
+When table name = None
+('keyword', 'BASE TABLE', 19, 'Contains broad categories of security expertise.')
+('member', 'BASE TABLE', 82, 'Contains information on Members of the CRIS directory.')
+('member_keyword', 'BASE TABLE', 307, 'Joins Keyword to Member through a lookup table.')
+('member_supp_key', 'BASE TABLE', 1296, 'Joins Member to Supp_Key through a lookup table.')
+('pub', 'BASE TABLE', 229, 'Contains representative Publications of Members.')
+('pub_type', 'BASE TABLE', 3, 'Primary key identifier for Type.')
+('supp_key', 'BASE TABLE', 160, 'Supplementary Keywords representing narrow areas of a Member')
+('v_keyword_supp_key', 'VIEW', 0, 'VIEW')
+('v_member_keyword', 'VIEW', 0, 'VIEW')
+('v_member_supp_key', 'VIEW', 0, 'VIEW')
+
+Q2 ------------------------------------------------------------------
+When table name = member
+('member', 'address', 'YES', 'longtext')
+('member', 'email', 'YES', 'varchar')
+('member', 'fax', 'YES', 'varchar')
+('member', 'first_name', 'YES', 'varchar')
+('member', 'institution', 'YES', 'longtext')
+('member', 'last_name', 'NO', 'varchar')
+('member', 'member_id', 'NO', 'smallint')
+('member', 'telephone', 'YES', 'varchar')
+('member', 'title', 'YES', 'varchar')
+
+Q3 ------------------------------------------------------------------
+When constraint type = None
+('FK_mk_keyword', 'member_keyword', 'FOREIGN KEY')
+('FK_mk_member', 'member_keyword', 'FOREIGN KEY')
+('FK_msk_member', 'member_supp_key', 'FOREIGN KEY')
+('FK_msk_supp_key', 'member_supp_key', 'FOREIGN KEY')
+('FK_pub_member', 'pub', 'FOREIGN KEY')
+('FK_pub_type', 'pub', 'FOREIGN KEY')
+('FK_supp_key_keyword', 'supp_key', 'FOREIGN KEY')
+('IN_k_desc', 'keyword', 'UNIQUE')
+('IN_pt_desc', 'pub_type', 'UNIQUE')
+('IN_sk_desc', 'supp_key', 'UNIQUE')
+('PRIMARY', 'keyword', 'PRIMARY KEY')
+('PRIMARY', 'member', 'PRIMARY KEY')
+('PRIMARY', 'member_keyword', 'PRIMARY KEY')
+('PRIMARY', 'member_supp_key', 'PRIMARY KEY')
+('PRIMARY', 'pub', 'PRIMARY KEY')
+('PRIMARY', 'pub_type', 'PRIMARY KEY')
+('PRIMARY', 'supp_key', 'PRIMARY KEY')
+
+Q4 ------------------------------------------------------------------
+When table name & ref table name = member_keyword, None
+('FK_mk_keyword', 'CASCADE', 'CASCADE', 'member_keyword', 'keyword')
+('FK_mk_member', 'CASCADE', 'CASCADE', 'member_keyword', 'member')
+
+Q5 ------------------------------------------------------------------
+When table name & ref table name = member_keyword, keyword
+('FK_mk_keyword', 'member_keyword', 'keyword_id', 'keyword', 'keyword_id')
+('FK_supp_key_keyword', 'supp_key', 'keyword_id', 'keyword', 'keyword_id')
+
