@@ -10,7 +10,7 @@ I love learning and the more I learn the less I feel like I know anything at all
 | Type      | Description |
 | ----------- | ----------- |
 | Languages | Python, C, Java, JS, Liquid/Ruby, SQL & VBA  |
-| Programs  | Confluence, JIRA, Asana, Office Suite & Adobe Creative Suite |
+| Programs  | Confluence, JIRA, Asana, Postman, Office Suite & Adobe Creative Suite |
 | Platforms | Shopify, Wix & Wordpress | 
 | Tools     | MongoDB, NodeJS, Express, Pandas, Selenium, Jupyter, LeafletJS & ChartJS |
 
