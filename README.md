@@ -14,9 +14,7 @@ I love learning and the more I learn the less I feel like I know anything at all
 | Platforms | Shopify, Wix & Wordpress | 
 | Tools     | MongoDB, NodeJS, Express, Pandas, Selenium, Jupyter, LeafletJS & ChartJS |
 
-Some frontend examples
-| [Heraime](https://www.heirame.com/) | [Lobonie](https://loboni-store.myshopify.com/) | 
-| [Haus London](https://hauslondon.com/) | [Mortgage Wizard](https://mortgagewizard.ca/) | 
+Some frontend examples of work: [Heraime](https://www.heirame.com/) | [Lobonie](https://loboni-store.myshopify.com/) | [Haus London](https://hauslondon.com/) | [Mortgage Wizard](https://mortgagewizard.ca/)
 
 ## Contact
 Best way to reach me publicly would be through my [LinkedIn](https://www.linkedin.com/in/liutiev/) so if you have any questions feel free to connect & ask! 
