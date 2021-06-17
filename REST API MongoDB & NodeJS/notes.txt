@@ -1,0 +1,7 @@
+npm init - for repository
+
+npm install express nodemon - dependencies
+npm start - starts server
+
+npm install mongoose - mongodb dependecy
+npm install dotenv - hide auth for db

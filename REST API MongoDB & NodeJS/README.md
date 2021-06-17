@@ -1,0 +1,1 @@
+Sample REST API withou a frontend using a MongoDB data base to store collections and implementing libraries from NodeJS.
