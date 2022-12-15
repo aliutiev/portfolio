@@ -1,6 +1,6 @@
 # Welcome :wave:
 
-Hey I'm Andrew. Included are some small projects and repositories. Hope you enjoy looking at what I've done preivously.
+Hey I'm Andrew. Included are some small projects and repositories. Hope you enjoy :)
 
 <img src="https://cdn.shopify.com/s/files/1/0469/9098/3319/files/Casual_Profile_Square.JPG?v=1615929696" width="200" height="200" />
 
