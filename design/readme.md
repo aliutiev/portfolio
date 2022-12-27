@@ -21,15 +21,37 @@
 
 </table>
 
+# [OKA Sushi](https://github.com/aliutiev/portfolio/tree/main/design/okasushi)
+
+<table>
+  <tr>
+    <td><img src="okasushi/oka_menu_2.png" width="100%" /></td>
+    <td><img src="oka_menu_1.png" width="100%" /></td>
+  </tr>
+
+</table>
+
+<table>
+
+  <tr>
+    <td><img src="okasushi/1.png" width="100%" /></td>
+    <td><img src="okasushi/2.png" width="100%" /></td>
+    <td><img src="okasushi/3.png" width="100%" /></td>
+
+  </tr>
+
+</table>
+
+
 # [March Madness](https://github.com/aliutiev/portfolio/tree/main/design/marchmadness)
 
 ## Thumbnails
 <table>
    <tr>
-    <td><img src="marchmadness/thumbnails/3.png" width="216" height="384" /></td>
-    <td><img src="marchmadness/thumbnails/4.png" width="216" height="384" /></td>
-     <td><img src="marchmadness/thumbnails/5.png" width="216" height="384" /></td>
-     <td><img src="marchmadness/thumbnails/6.png" width="216" height="384" /></td>
+    <td><img src="marchmadness/thumbnails/3.png" width="144" height="256" /></td>
+    <td><img src="marchmadness/thumbnails/4.png" width="144" height="256" /></td>
+     <td><img src="marchmadness/thumbnails/5.png" width="144" height="256" /></td>
+     <td><img src="marchmadness/thumbnails/6.png" width="144" height="256" /></td>
   </tr>
 </table>
 
