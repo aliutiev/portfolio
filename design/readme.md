@@ -77,7 +77,7 @@
   </tr>
        <tr>
     <td><img src="marchmadness/13.png" width="400" height="400" /></td>
-    <td>We can pretend it's even</td>
+   
   </tr>
 
 </table>
