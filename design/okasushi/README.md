@@ -21,7 +21,7 @@
 
 <table>
   <tr>
-    <td><img src="oka_store_poster.pdf" width="100%" /></td>
+    <td><img src="oka_store_poster.png" width="100%" /></td>
   </tr>
 
 </table>
