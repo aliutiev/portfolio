@@ -22,7 +22,6 @@
 </table>
 
 # [OKA Sushi](https://github.com/aliutiev/portfolio/tree/main/design/okasushi)
-<em>Link to live site: </em> [OKAsushi](https://okasushi.app/)
 
 <table>
   <tr>
