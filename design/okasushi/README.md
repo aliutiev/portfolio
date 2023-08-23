@@ -18,3 +18,10 @@
   </tr>
 
 </table>
+
+<table>
+  <tr>
+    <td><img src="oka_store_poster.pdf" width="100%" /></td>
+  </tr>
+
+</table>
